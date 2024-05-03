@@ -8,19 +8,14 @@ body {
     justify-content: space-between;
     padding: 0;
     margin: 0;
-    min-width: 960px;
     max-width: 100%;
-    height: 100vh;
-}
-
-.header {
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-flow: column wrap;
+    min-height: 100vh;
 }
 
 .header, .footer {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 15px;
     color: #e5e7eb;
     background-color: #1f2937;
     justify-content: space-between;
@@ -31,22 +26,19 @@ body {
     justify-content: space-between;
     font-size: 18px;
     margin-bottom: 15px;
-    padding: 15px 40px 15px 40px;
 }
 
 h1 {
     font-size: 48px;
+    font-weight: 800;
     color: #f9faf8;
 }
 
 h2 {
     font-size: 36px;
+    font-weight: 800;
     color: #1f2937;
     text-align: center;
-}
-
-h1, h2 {
-    font-weight: 800;
 }
 
 ul {
@@ -71,15 +63,14 @@ a:hover {
 
 .header-content {
     display: flex;
-    justify-content: center;
-    gap: 50px;
+    flex-wrap: wrap;
     align-items: flex-end;
-    margin-top: -25px;
-    margin-bottom: 50px;
+    justify-content: center;
+    margin: 0px 0px 25px 0px;
+    gap: 35px;
 }
 
 .header-text{
-    width: 400px;
     align-self: center;
     margin-top: -10px;
 }
@@ -103,9 +94,10 @@ img {
     border-radius: 15px;
 }
 
-.header-image {
-    display: flex;
-    flex-shrink: 1;
+img.header-image {
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .information{
@@ -163,14 +155,16 @@ img {
 }
 
 .call-to-action {
-    margin: 75px;
+    margin: 3rem;
 }
 
 .action-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    padding: 0px;
+    padding: 40px;
+    gap: 26px;
     background-color: #3882f6;
     border-radius: 15px;
 }
@@ -178,12 +172,10 @@ img {
 .text-container {
     display: flex;
     flex-direction: column;
-    padding: 40px;
 }
 
 .button-container {
     align-self: center;
-    padding: 0 40px 0 0;
 }
 
 .sign-up, .back {
